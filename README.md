@@ -1,6 +1,6 @@
 # 📊 Jairo Sandino's Data Portfolio
 
-Welcome! This portfolio highlights selected data science and analytics projects demonstrating my skills in SQL, Python, Power BI, R, and cloud tools like Google Cloud and Azure.
+Welcome! This portfolio highlights my selected analytics projects demonstrating my skills in SQL, Python, Power BI, R, and cloud tools.
 
 ## 🚀 Featured Projects
 
