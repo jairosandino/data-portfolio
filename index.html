@@ -47,7 +47,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-B820MZ2564'); // Replace with your GA4 ID
+    gtag('config', 'G-B820MZ2564');
   </script>
 </head>
 
@@ -100,13 +100,16 @@
 
   <!-- Custom GA4 Event Tracking for Project Clicks -->
   <script>
-    document.querySelectorAll('.project-link').forEach(function(link) {
-      link.addEventListener('click', function() {
-        const title = this.getAttribute('data-title') || 'Unknown Project';
-        gtag('event', 'project_click', {
-          event_category: 'Engagement',
-          event_label: title,
-          project_title: title
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('.project-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          const title = this.getAttribute('data-title') || 'Unknown Project';
+          console.log("CLICK EVENT:", title); // ✅ Debug
+          gtag('event', 'project_click', {
+            event_category: 'Engagement',
+            event_label: title,
+            project_title: title
+          });
         });
       });
     });
