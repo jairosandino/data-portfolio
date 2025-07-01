@@ -4,13 +4,24 @@ Welcome! This portfolio highlights my selected analytics projects demonstrating 
 
 ## 🚀 Featured Projects
 
-| Project | Description | Tools | Link |
-|--------|-------------|-------|------|
-| 🏦 **Bank Client Churn Analysis** | Predicting churn using customer behavior data from a financial institution. | Python, Pandas, Scikit-learn, Matplotlib | [Repo](https://github.com/jisandino/bank-churn-prediction) |
-| 📈 **Sales Dashboard for Retail Chain** | Interactive sales dashboard connected to Contoso DB. | Power BI, DAX, SQL Server | [Repo](https://github.com/jisandino/contoso-dashboard) |
-| ☁️ **Google Cloud BigQuery Challenge** | Analysis of large-scale datasets using SQL and BigQuery. | Google Cloud, BigQuery, SQL | [Repo](https://github.com/jisandino/gcloud-challenge) |
-| 📉 **COVID-19 Impact on Mobility** | Analysis of mobility patterns during COVID-19 pandemic. | Python, Jupyter, APIs, Plotly | [Repo](https://github.com/jisandino/covid19-mobility-analysis) |
-| 🧠 **Text Sentiment Analysis** | NLP model to classify sentiment from customer reviews. | Python, NLTK, Scikit-learn | [Repo](https://github.com/jisandino/sentiment-nlp) |
+| # | Project Title | Type | Tools & Focus |
+|--:|---------------|------|---------------|
+| 1 | [Time Series Forecasting](link-to-project-folder) | Dashboard + Model | Time Series Forecasting, Python (Prophet), Power BI |
+| 2 | [Consumer Financial Protection Bureau](link-to-project-folder) | Dashboard | Power BI, Data Cleaning, Complaint Insights |
+| 3 | [Nicaragua Remittance Analysis](link-to-project-folder) | Dashboard | Power BI, Economic & Financial Analysis |
+| 4 | [US Unemployment & Education Analysis](link-to-project-folder) | Dashboard + Model | Regression, Python, Socioeconomic Trends |
+| 5 | [Credit Card Accounts Lifecycle Segmentation](link-to-project-folder) | Dashboard + Model | Clustering (K-Means), Customer Segmentation, Power BI |
+
+---
+
+## 📁 About the Projects
+
+Each project is self-contained and includes:
+
+- 📊 Interactive Dashboards (Power BI or embedded visuals)
+- 📁 Data Cleaning and Preparation Scripts
+- 🧠 Model Building (Forecasting, Regression, or Clustering)
+- 📜 Documentation and Business Insights
 
 ---
 
