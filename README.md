@@ -1,16 +1,16 @@
 # 📊 Jairo Sandino's Data Portfolio
 
-Welcome! This portfolio highlights my selected analytics projects demonstrating my skills in SQL, Python, Power BI, R, and cloud tools.
+Welcome! This portfolio highlights some of my selected projects demonstrating my skills in SQL, Python, Power BI, R, and cloud tools.
 
 ## 🚀 Featured Projects
 
 | Project | Description | Tools | Link |
 |--------|-------------|-------|------|
+| 💳 **Credit Card Lifecycle Segmentation** | Customer segmentation based on credit card usage lifecycle. | Python (K-Means), Power BI, Scikit-learn | [Repo](https://github.com/jisandino/data-portfolio/tree/main/CreditCard-Segmentation) |
 | 📈 **Time Series Forecasting** | Forecasting cash withdrawal patterns using time series modeling. | Python (Prophet), Pandas, Power BI | [Repo](https://github.com/jisandino/data-portfolio/tree/main/Time-Series-Forecasting) |
+| 🎓 **US Unemployment & Education Analysis** | Modeling and dashboard exploring the relationship between education and unemployment. | Python (Regression), Power BI, Pandas | [Repo](https://github.com/jisandino/data-portfolio/tree/main/US-Unemployment-Education) |
 | 🏛️ **Consumer Financial Protection Dashboard** | Analysis of consumer complaints filed to the CFPB across states and categories. | Power BI, DAX, Excel | [Repo](https://github.com/jisandino/data-portfolio/tree/main/CFPB-Dashboard) |
 | 💸 **Nicaragua Remittance Dashboard** | Interactive dashboard showing trends and economic impact of remittances to Nicaragua. | Power BI, Data Wrangling, Visualization | [Repo](https://github.com/jisandino/data-portfolio/tree/main/Nicaragua-Remittance) |
-| 🎓 **US Unemployment & Education Analysis** | Modeling and dashboard exploring the relationship between education and unemployment. | Python (Regression), Power BI, Pandas | [Repo](https://github.com/jisandino/data-portfolio/tree/main/US-Unemployment-Education) |
-| 💳 **Credit Card Lifecycle Segmentation** | Customer segmentation based on credit card usage lifecycle. | Python (K-Means), Power BI, Scikit-learn | [Repo](https://github.com/jisandino/data-portfolio/tree/main/CreditCard-Segmentation) |
 
 ---
 
