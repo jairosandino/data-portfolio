@@ -4,13 +4,13 @@ Welcome! This portfolio highlights my selected analytics projects demonstrating 
 
 ## 🚀 Featured Projects
 
-| # | Project Title | Type | Tools & Focus |
-|--:|---------------|------|---------------|
-| 1 | [Time Series Forecasting](link-to-project-folder) | Dashboard + Model | Time Series Forecasting, Python (Prophet), Power BI |
-| 2 | [Consumer Financial Protection Bureau](link-to-project-folder) | Dashboard | Power BI, Data Cleaning, Complaint Insights |
-| 3 | [Nicaragua Remittance Analysis](link-to-project-folder) | Dashboard | Power BI, Economic & Financial Analysis |
-| 4 | [US Unemployment & Education Analysis](link-to-project-folder) | Dashboard + Model | Regression, Python, Socioeconomic Trends |
-| 5 | [Credit Card Accounts Lifecycle Segmentation](link-to-project-folder) | Dashboard + Model | Clustering (K-Means), Customer Segmentation, Power BI |
+| Project | Description | Tools | Link |
+|--------|-------------|-------|------|
+| 📈 **Time Series Forecasting** | Forecasting cash withdrawal patterns using time series modeling. | Python (Prophet), Pandas, Power BI | [Repo](https://github.com/jisandino/data-portfolio/tree/main/Time-Series-Forecasting) |
+| 🏛️ **Consumer Financial Protection Dashboard** | Analysis of consumer complaints filed to the CFPB across states and categories. | Power BI, DAX, Excel | [Repo](https://github.com/jisandino/data-portfolio/tree/main/CFPB-Dashboard) |
+| 💸 **Nicaragua Remittance Dashboard** | Interactive dashboard showing trends and economic impact of remittances to Nicaragua. | Power BI, Data Wrangling, Visualization | [Repo](https://github.com/jisandino/data-portfolio/tree/main/Nicaragua-Remittance) |
+| 🎓 **US Unemployment & Education Analysis** | Modeling and dashboard exploring the relationship between education and unemployment. | Python (Regression), Power BI, Pandas | [Repo](https://github.com/jisandino/data-portfolio/tree/main/US-Unemployment-Education) |
+| 💳 **Credit Card Lifecycle Segmentation** | Customer segmentation based on credit card usage lifecycle. | Python (K-Means), Power BI, Scikit-learn | [Repo](https://github.com/jisandino/data-portfolio/tree/main/CreditCard-Segmentation) |
 
 ---
 
