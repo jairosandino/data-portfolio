@@ -6,38 +6,63 @@
   <title>Jairo Sandino - Data Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      max-width: 800px;
-      line-height: 1.6;
-      background: #fafafa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
       color: #333;
+      margin: 0;
+      padding: 2rem;
     }
-    h1 {
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
       color: #2c3e50;
+      text-align: center;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 1.2rem;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .card a {
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
     }
     a {
       color: #2980b9;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 1rem;
-    }
-    .project-title {
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #888;
     }
   </style>
 
@@ -52,59 +77,72 @@
 </head>
 
 <body>
-  <h1>Jairo Sandino - Data Portfolio</h1>
-  <p>Welcome! Here are some of my featured projects showcasing data science and analytics models.</p>
+  <div class="container">
+    <h1>📊 Jairo Sandino's Data Portfolio</h1>
+    <p style="text-align:center;">This portfolio highlights some of my selected projects demonstrating my skills in SQL, Python, Power BI, R, and cloud tools.</p>
 
-  <ul>
-    <li>
-      <div class="project-title">
-        <a href="https://github.com/jisandino/data-portfolio/tree/main/Bank-Client-Churn-Analysis" 
-           class="project-link" data-title="Bank Client Churn Analysis" target="_blank">
-           Bank Client Churn Analysis
-        </a>
+    <h2>🚀 Featured Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>💳 Credit Card Lifecycle Segmentation</h3>
+        <p>Customer segmentation based on credit card usage lifecycle.</p>
+        <a href="https://github.com/jisandino/data-portfolio/tree/main/CreditCard-Segmentation" target="_blank" class="project-link" data-title="Credit Card Lifecycle Segmentation">View Project →</a>
       </div>
-      <div>Predicting customer churn for a financial institution using Python and machine learning.</div>
-    </li>
-    <li>
-      <div class="project-title">
-        <a href="https://github.com/jisandino/data-portfolio/tree/main/Consumer-Financial-Protection-Bureau-Dashboard" 
-           class="project-link" data-title="Consumer Financial Protection Bureau Dashboard" target="_blank">
-           Consumer Financial Protection Bureau Dashboard
-        </a>
+      <div class="card">
+        <h3>📈 Time Series Forecasting</h3>
+        <p>Forecasting patterns using time series modeling.</p>
+        <a href="https://github.com/jisandino/data-portfolio/tree/main/Time-Series-Forecasting" target="_blank" class="project-link" data-title="Time Series Forecasting">View Project →</a>
       </div>
-      <div>Interactive dashboard tracking financial consumer complaints and insights using Power BI.</div>
-    </li>
-    <li>
-      <div class="project-title">
-        <a href="https://github.com/jisandino/data-portfolio/tree/main/Nicaragua-Remittance-Dashboard" 
-           class="project-link" data-title="Nicaragua Remittance Dashboard" target="_blank">
-           Nicaragua Remittance Dashboard
-        </a>
+      <div class="card">
+        <h3>🎓 US Unemployment & Education Analysis</h3>
+        <p>Modeling and dashboard exploring the relationship between education and unemployment.</p>
+        <a href="https://github.com/jisandino/data-portfolio/tree/main/US-Unemployment-Education" target="_blank" class="project-link" data-title="US Unemployment & Education Analysis">View Project →</a>
       </div>
-      <div>Visualizing remittance flows and economic data for Nicaragua with Python and Tableau.</div>
-    </li>
-    <li>
-      <div class="project-title">
-        <a href="https://github.com/jisandino/data-portfolio/tree/main/Credit-Card-Accounts-Lifecycle-Segmentation" 
-           class="project-link" data-title="Credit Card Accounts Lifecycle Segmentation" target="_blank">
-           Credit Card Accounts Lifecycle Segmentation
-        </a>
+      <div class="card">
+        <h3>🏛️ Consumer Financial Protection Dashboard</h3>
+        <p>Analysis of consumer complaints filed to the CFPB across states and categories.</p>
+        <a href="https://github.com/jisandino/data-portfolio/tree/main/CFPB-Dashboard" target="_blank" class="project-link" data-title="Consumer Financial Protection Dashboard">View Project →</a>
       </div>
-      <div>Segmenting credit card users by lifecycle stage using clustering and data analysis.</div>
-    </li>
-  </ul>
+      <div class="card">
+        <h3>💸 Nicaragua Remittance Dashboard</h3>
+        <p>Interactive dashboard showing trends and economic impact of remittances to Nicaragua.</p>
+        <a href="https://github.com/jisandino/data-portfolio/tree/main/Nicaragua-Remittance" target="_blank" class="project-link" data-title="Nicaragua Remittance Dashboard">View Project →</a>
+      </div>
+    </div>
 
-  <footer>
-    <p>GitHub: <a href="https://github.com/jisandino" target="_blank">github.com/jisandino</a></p>
-  </footer>
+    <h2>📁 About the Projects</h2>
+    <ul>
+      <li>📊 Interactive Dashboards (Power BI or embedded visuals)</li>
+      <li>📁 Data Cleaning and Preparation Scripts</li>
+      <li>🧠 Model Building (Forecasting, Regression, or Clustering)</li>
+      <li>📜 Documentation and Business Insights</li>
+    </ul>
 
-  <!-- Custom GA4 Event Tracking for Project Clicks -->
+    <h2>🛠 Skills</h2>
+    <ul>
+      <li><strong>Languages</strong>: Python, SQL, R</li>
+      <li><strong>Tools</strong>: Power BI, Excel, Git, Jupyter, VS Code</li>
+      <li><strong>Cloud</strong>: Google Cloud Platform, Azure</li>
+      <li><strong>Libraries</strong>: Pandas, NumPy, Scikit-learn, Seaborn, Plotly, NLTK</li>
+    </ul>
+
+    <h2>📫 Let's Connect</h2>
+    <p>
+      <a href="https://www.linkedin.com/in/jairosandino/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/jisandino" target="_blank">GitHub</a>
+    </p>
+
+    <footer>
+      <p>© 2025 Jairo Sandino • Built with HTML & GitHub Pages</p>
+    </footer>
+  </div>
+
+  <!-- Google Analytics Custom Event Tracking -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll('.project-link').forEach(function(link) {
         link.addEventListener('click', function() {
           const title = this.getAttribute('data-title') || 'Unknown Project';
-          console.log("CLICK EVENT:", title); // ✅ Debug
           gtag('event', 'project_click', {
             event_category: 'Engagement',
             event_label: title,
