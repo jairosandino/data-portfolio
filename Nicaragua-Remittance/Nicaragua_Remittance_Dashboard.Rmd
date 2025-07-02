@@ -1,0 +1,100 @@
+---
+title: "Nicaragua Remittance Dashboard"
+output:
+  html_document:
+    self_contained: true
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+library(readxl)
+library(dplyr)
+library(lubridate)
+library(plotly)
+library(scales)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+data <- read_excel("C://Users//JSP_DELL_XPS//Downloads//data_remesas.xlsx", sheet = "general")
+head(data)
+
+data <- data %>%
+  mutate(
+    Date = parse_date_time(paste(Year, Month), orders = "Y B"),
+    Quarter = quarter(Date)
+  )
+
+data_q1 <- data %>%
+  filter(Year >= 2021, Year <= 2025, Quarter == 1)
+
+agg_q1 <- data_q1 %>%
+  group_by(Year) %>%
+  summarise(Amount = sum(Amount, na.rm = TRUE)) %>%
+  ungroup()
+
+
+fig <- plot_ly(
+  data = agg_q1,
+  x = ~Year,
+  y = ~Amount,
+  type = 'bar',
+  name = "Q1",
+  marker = list(color = '#4A90E2'),
+  text = ~comma(Amount, accuracy = 0.1),
+  textposition = 'outside',
+  width = 0.7
+)
+
+fig <- fig %>% layout(
+  title = list(
+    text = "<b>Remittances Received, Q1 by Year</b><br><span style='font-size:14px; color:#666;'>in million USD</span>",
+    x = 0.08,
+    xanchor = "left",
+    font = list(size = 18, color = '#333333', family = 'Georgia')
+  ),
+  xaxis = list(
+    title = "",
+    tickfont = list(size = 12, color = '#666666', family = "Georgia"),
+    showgrid = FALSE,
+    showline = TRUE,
+    linecolor = '#E5E5E5',
+    linewidth = 1,
+    range = c(2020.4, 2025.6),
+    tickformat = ".0f"
+  ),
+  yaxis = list(
+    title = "",
+    tickfont = list(size = 11, color = '#666666', family = "Georgia"),
+    showgrid = TRUE,
+    gridcolor = '#F0F0F0',
+    gridwidth = 0.8,
+    showline = FALSE,
+    range = c(0, max(agg_q1$Amount) * 1.15),
+    tickformat = ",.0f"
+  ),
+  plot_bgcolor = '#FAFAFA',
+  paper_bgcolor = 'white',
+  width = 900,
+  height = 650,
+  font = list(family = "Georgia", size = 12, color = '#333333'),
+  showlegend = TRUE,
+  legend = list(
+    x = 0.08,
+    y = 0.92,
+    bgcolor = 'rgba(0,0,0,0)',
+    bordercolor = 'rgba(0,0,0,0)',
+    font = list(size = 11, color = '#666666', family = 'Georgia')
+  ),
+  margin = list(l = 90, r = 50, t = 120, b = 100)
+)
+
+fig <- fig %>% add_annotations(
+  text = "<i>Source: BCN and remittance operators</i>",
+  xref = "paper", yref = "paper",
+  x = 0.08, y = -0.12,
+  showarrow = FALSE,
+  font = list(size = 10, color = '#999999', family = 'Georgia')
+)
+
+fig
