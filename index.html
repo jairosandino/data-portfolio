@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jairo Sandino - Data Portfolio</title>
 
+  <!-- Import Work Sans from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+
   <style>
     body {
       font-family: 'Work Sans', sans-serif;
@@ -18,26 +20,19 @@
       max-width: 1000px;
       margin: auto;
     }
-    h1, h2 {
-      color: #1f77b4;
+    h1 {
+      color: #2c3e50;
       text-align: center;
     }
-    .hero {
+    h2 {
+      color: #2c3e50;
+      margin-top: 2.5rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .intro {
       text-align: center;
-      margin-bottom: 2.5rem;
-    }
-    .hero img {
-      width: 130px;
-      border-radius: 100px;
-      margin: 1em auto;
-      display: block;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    .hero p {
-      max-width: 700px;
-      margin: 0.5em auto;
-      font-size: 1em;
-      color: #444;
     }
     .grid {
       display: grid;
@@ -58,33 +53,44 @@
     .card h3 {
       margin: 0.5rem 0;
       font-size: 1.1rem;
-      color: #1f77b4;
     }
     .card p {
       font-size: 0.95rem;
       margin-bottom: 1rem;
-      color: #333;
     }
     .card a {
       text-decoration: none;
-      color: #E99002;
+      color: #2980b9;
       font-weight: bold;
     }
     ul {
       padding-left: 1.2rem;
     }
     footer {
-      margin-top: 4rem;
+      margin-top: 3rem;
       text-align: center;
       color: #777;
       font-size: 0.9rem;
     }
     a {
-      color: #1f77b4;
+      color: #2980b9;
+    }
+    .headshot {
+      display: block;
+      margin: 0 auto 1em;
+      width: 130px;
+      border-radius: 100px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .summary {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+      color: #555;
     }
   </style>
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B820MZ2564"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -96,68 +102,72 @@
 
 <body>
   <div class="container">
-    <div class="hero">
-      <!-- Optional photo -->
-      <!-- <img src="headshot.jpg" alt="Jairo Sandino"> -->
 
-      <h1>Jairo Sandino Pastora</h1>
-      <p><strong>Senior Data Analyst | Data Scientist | Cloud Analytics</strong></p>
-      <p>
-        I’m a data professional with 5+ years of experience in predictive modeling, risk analytics, and business intelligence.
-        I've delivered over $500K in cost savings via machine learning and forecasting solutions. Skilled in SQL, Python, Power BI, and cloud platforms with hands-on experience building full-stack data workflows and interactive dashboards.
-      </p>
-    </div>
+    <!-- Profile Photo + Title + Summary -->
+    <img src="headshot.jpg" alt="Jairo Sandino" class="headshot" />
+    <h1>Jairo Sandino Pastora</h1>
+    <p class="summary">
+      Senior Data Analyst with 5+ years of experience in predictive modeling, risk analytics, and business intelligence.
+      Delivered $500K+ in savings through ML models and $15K/month via demand forecasting optimization. Skilled in SQL, Python, Power BI, and cloud analytics platforms.
+    </p>
 
     <h2>Featured Projects</h2>
     <div class="grid">
       <div class="card">
         <h3>💳 Credit Card Lifecycle Segmentation</h3>
-        <p>Customer segmentation using lifecycle stages of credit card usage.</p>
+        <p>Customer segmentation based on credit card usage lifecycle.</p>
         <a href="https://github.com/jisandino/data-portfolio/tree/main/CreditCard-Segmentation" target="_blank" class="project-link" data-title="Credit Card Lifecycle Segmentation">View Project →</a>
       </div>
       <div class="card">
         <h3>📈 Time Series Forecasting</h3>
-        <p>Time series modeling to uncover trends and predict future patterns.</p>
+        <p>Forecasting patterns using time series modeling.</p>
         <a href="https://github.com/jisandino/data-portfolio/tree/main/Time-Series-Forecasting" target="_blank" class="project-link" data-title="Time Series Forecasting">View Project →</a>
       </div>
       <div class="card">
         <h3>🎓 US Unemployment & Education Analysis</h3>
-        <p>Exploring how educational attainment influences unemployment using regression analysis and dashboarding.</p>
+        <p>Modeling and dashboard exploring the relationship between education and unemployment.</p>
         <a href="https://github.com/jisandino/data-portfolio/tree/main/US-Unemployment-Education" target="_blank" class="project-link" data-title="US Unemployment & Education Analysis">View Project →</a>
       </div>
       <div class="card">
-        <h3>🏛️ CFPB Complaint Dashboard</h3>
-        <p>Visualization of consumer financial complaints by issue, location, and time.</p>
+        <h3>🏛️ Consumer Financial Protection Dashboard</h3>
+        <p>Analysis of consumer complaints filed to the CFPB across states and categories.</p>
         <a href="https://github.com/jisandino/data-portfolio/tree/main/CFPB-Dashboard" target="_blank" class="project-link" data-title="Consumer Financial Protection Dashboard">View Project →</a>
       </div>
       <div class="card">
         <h3>💸 Nicaragua Remittance Dashboard</h3>
-        <p>Interactive dashboard showing trends in remittance inflows to Nicaragua.</p>
+        <p>Interactive dashboard showing trends and economic impact of remittances to Nicaragua.</p>
         <a href="https://jisandino.github.io/data-portfolio/Nicaragua-Remittance/" target="_blank" class="project-link" data-title="Nicaragua Remittance Dashboard">View Project →</a>
       </div>
     </div>
 
-    <h2>Skills Snapshot</h2>
+    <h2>About the Projects</h2>
     <ul>
-      <li><strong>Languages:</strong> Python, SQL, R</li>
-      <li><strong>Tools:</strong> Power BI, Excel, Git, Jupyter, VS Code</li>
-      <li><strong>Cloud Platforms:</strong> Google Cloud Platform, Azure</li>
-      <li><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, Seaborn, Plotly, NLTK</li>
+      <li>Interactive Dashboards (Power BI or embedded visuals)</li>
+      <li>Data Cleaning and Preparation Scripts</li>
+      <li>Model Building (Forecasting, Regression, or Clustering)</li>
+      <li>Documentation and Business Insights</li>
     </ul>
 
-    <h2>Let’s Connect</h2>
-    <p style="text-align: center;">
-      <a href="mailto:jairosandino@gmail.com">Email</a> |
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages</strong>: Python, SQL, R</li>
+      <li><strong>Tools</strong>: Power BI, Excel, Git, Jupyter, VS Code</li>
+      <li><strong>Cloud</strong>: Google Cloud Platform, Azure</li>
+      <li><strong>Libraries</strong>: Pandas, NumPy, Scikit-learn, Seaborn, Plotly, NLTK</li>
+    </ul>
+
+    <h2>Let's Connect</h2>
+    <p>
       <a href="https://www.linkedin.com/in/jairosandino/" target="_blank">LinkedIn</a> |
       <a href="https://github.com/jisandino" target="_blank">GitHub</a>
     </p>
 
     <footer>
-      <p>© 2025 Jairo Sandino Pastora. All rights reserved.</p>
+      <p>Copyright © 2025 Jairo Sandino. All rights reserved </p>
     </footer>
   </div>
 
-  <!-- Google Analytics Event Tracking -->
+  <!-- Google Analytics Custom Event Tracking -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll('.project-link').forEach(function(link) {
